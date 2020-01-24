@@ -29,8 +29,8 @@ pipelines:
                 store_id: harbor
                 configuration:
                   options:
-                    Image: ${DOCKERHUB_USERNAME}/bulletin-board
-                    Tag: ${GO_PIPELINE_LABEL}
+                    Image: demo/test
+                    Tag: v1
             tasks:
             - exec:
                 arguments:
