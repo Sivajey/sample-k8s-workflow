@@ -35,6 +35,6 @@ pipelines:
             - exec:
                 arguments:
                 - -c
-                - docker build -t demo/test . -f Dockerfile.application
+                - docker build -t demo/test:v1 . -f Dockerfile.application
                 command: /bin/bash
                 run_if: passed
